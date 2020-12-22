@@ -22,7 +22,7 @@ def wrap(args):
     db = ImageDatabase(args.dbFile)
     result = get_response(args.keyword, args.numImages)
     results_to_db(db, result)
-    red_img = db.find_the_most_red_colored()
+    red_img = db.find_the_most_red_colored_image()
     response = requests.get(red_img, stream = True)
     image = Image.open(response.raw)
     image.show()

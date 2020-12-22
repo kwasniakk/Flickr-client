@@ -34,7 +34,7 @@ class ImageDatabase:
 
         return self.cursor.fetchall()
 
-    def find_the_most_red_colored(self):
+    def find_the_most_red_colored_image(self):
         """[Search for the most colored image in the database]
 
         Returns:
