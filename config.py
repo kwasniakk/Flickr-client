@@ -1,0 +1,1 @@
+AUTH_KEY = "" # paste your api_key
